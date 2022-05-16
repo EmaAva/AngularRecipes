@@ -8,6 +8,7 @@ import { AppRecipesSheetComponent } from './app-recipes-sheet/app-recipes-sheet.
 import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
 import { AppInsertModalComponent } from './app-insert-modal/app-insert-modal.component';
 import { AppModifyModalComponent } from './app-modify-modal/app-modify-modal.component';
+import { AppAddModalComponent } from './app-add-modal/app-add-modal.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppModifyModalComponent } from './app-modify-modal/app-modify-modal.com
     AppRecipesSheetComponent,
     AppSidebarComponent,
     AppInsertModalComponent,
-    AppModifyModalComponent
+    AppModifyModalComponent,
+    AppAddModalComponent
   ],
   imports: [
     BrowserModule,
