@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InsertServiceService } from '../insert-service.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-sidebar.component.css']
 })
 export class AppSidebarComponent implements OnInit {
-
-  constructor() { }
+  recipes:any;
+  constructor(private InsService:InsertServiceService) { }
 
   ngOnInit(): void {
   }
-
+  
+  ViewRecipes(){
+    this.InsService.sendGetReq('/ViewRecipes').subscribe(
+      (data: any) => {
+        this.recipes = data;
+      }
+    );
+  }
 }

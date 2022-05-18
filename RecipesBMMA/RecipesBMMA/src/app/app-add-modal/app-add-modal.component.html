@@ -18,14 +18,14 @@
             <div class="col-9">
               <div class="form-group">
                 <label for="addTitolo" class="col-form-label">Titolo:</label>
-                <textarea class="form-control" style="height: 40px" id="addTitolo"></textarea>
+                <textarea class="form-control" style="height: 40px" id="addTitolo" #addTitolo></textarea>
               </div>
             </div>
 
             <div class="col-3">
               <div class="form-group">
                 <label for="addDiff" class="form-label">Difficoltà:</label>
-                <input type="range" class="form-range" min="1" max="5" value="1" id="addDiff">
+                <input type="range" class="form-range" min="1" max="5" value="1" id="addDiff" #addDiff>
 
                 <div class="row" style="font-size: 18px">
                   <div class="col-md-2 ">1</div>
@@ -47,21 +47,21 @@
             <div class="col-7">
               <div class="form-group">
                 <label for="addIng" class="col-form-label">Ingredienti:</label>
-                <textarea class="form-control" id="addIng"></textarea>
+                <textarea class="form-control" id="addIng" #addIng></textarea>
               </div>
             </div>
 
             <div class="col-3">
               <div class="form-group">
                 <label for="addCott" class="col-form-label">Cottura:</label>
-                <textarea class="form-control" id="addCott"></textarea>
+                <textarea class="form-control" id="addCott" #addCott></textarea>
               </div>
             </div>
 
             <div class="col-2">
               <div class="form-group" style="margin-top: 14px">
                 <label for="addPorz">Porzioni:</label>
-                <select class="form-control" style="height: 60px" id="addPorz">
+                <select class="form-control" style="height: 60px" id="addPorz" #addPorz>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -82,14 +82,14 @@
           <div class="col-12">
             <div class="form-group">
               <label for="addProc" class="col-form-label">Procedimento:</label>
-              <textarea class="form-control" style="height: 150px" id="addProc"></textarea>
+              <textarea class="form-control" style="height: 150px" id="addProc" #addProc></textarea>
             </div>
           </div>
           </div>
 
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Confirm</button>
+            <button type="submit" class="btn btn-primary" (click)="InsertRecipe(addTitolo.value, addDiff.value, addIng.value, addCott.value, addPorz.value, addProc.value)">Confirm</button>
           </div>
 
         </form>
