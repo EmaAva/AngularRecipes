@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "6284ad421e73482c9d8e37a9"
+  },
+  "titolo": "Pollo al curry",
+  "difficolta": 1,
+  "ingredienti": [
+    "pollo",
+    " curry"
+  ],
+  "cottura": "veloce",
+  "porzioni": 1,
+  "procedimento": "procedimentoooooooooooooo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6284af41e6ca58082df57062"
+  },
+  "titolo": "Pollo alle mandorle",
+  "difficolta": 4,
+  "ingredienti": [
+    "Pollo",
+    " mandorle",
+    " balbi"
+  ],
+  "cottura": "Padella",
+  "porzioni": 1,
+  "procedimento": "Cuocere il pollo",
+  "__v": 0
+}]
