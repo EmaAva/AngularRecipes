@@ -67,16 +67,20 @@
         href="#"
         class="list-group-item list-group-item-action py-3 lh-tight"
         aria-current="true"
-        *ngFor="let item of recipes"
+        *ngFor="let item of recipes; index as i"
+        (click)="populateSheet(i)"
       >
+      <div id="{{i}}">
         <div class="d-flex w-100 align-items-center justify-content-between">
           <strong class="mb-1">{{ item.titolo }}</strong>
-          <small>Porzioni {{ item.porzioni }}</small>
+          <small>D {{ item.porzioni }}</small>
         </div>
         <div class="col-10 mb-1 small">
           Difficolta: {{ item.difficolta }}<br />
           Cottura: {{ item.cottura }}
         </div>
+      </div>
+        
       </a>
     </div>
   </div>
