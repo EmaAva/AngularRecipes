@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { AppRecipesSheetComponent } from '../app/app-recipes-sheet/app-recipes-sheet.component';
 
 
 @Injectable({
