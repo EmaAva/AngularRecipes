@@ -12,6 +12,7 @@ var DBConnection = function(){
         'ingredienti': [String],
         'cottura': String,
         'porzioni': Number,
+		'ingstring':String,
         'procedimento' : {type:String, required:[true,'procedimento required'],default:''} });
     this.Model = mongoose.model('recipe', this.Schema,'recipes');
     }

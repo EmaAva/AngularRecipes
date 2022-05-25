@@ -16,17 +16,16 @@ router.use(function timeLog(req,res,next){
 router.get('/',function(req,res,next){
     database.Model.find(
     function(err,response){
-        for(var element in response){
-            element.push({'ingstring':''});
-            element.ingredienti.forEach(function callback(inglist, index) {
-                if(index == 0)
+		response.forEach(function callbackk(element, index){
+            element.ingredienti.forEach(function callback(inglist, index1) {
+                if(index1 == 0)
                     element.ingstring = inglist;
                 else
                     element.ingstring += ', ' + inglist;
             });
-        }
+        });
         console.log(response);
-        //res.send(response);
+        res.send(response);
     });
 });
 //****************************************/
